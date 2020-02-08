@@ -30,3 +30,13 @@ Forms without a proper redirect, might result in resubmission. Resulting in calk
 So redirection should be encouraged.
 
 Cookies are un encrypted, so use sessions always
+
+5. Using python-dotenv for environment configurations.
+
+    .flaskenv is not committed to the git because of sensitive information, so create one with the below content
+
+    ```
+    FLASK_APP='app.py'
+    FLASK_ENV='development'
+    SECRET_KEY='<with your secret key>'
+    ```

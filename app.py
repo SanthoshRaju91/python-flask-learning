@@ -4,7 +4,7 @@ from flask import Flask, render_template, request, redirect, url_for, session
 # In flask, it gives a context of where the application is running and to look for files.
 app = Flask(__name__)
 
-app.secret_key = "my_secret_password"
+app.config.from_pyfile("settings.py")
 
 @app.route("/")
 def index():
