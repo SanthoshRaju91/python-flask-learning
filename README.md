@@ -24,3 +24,7 @@
 
     `pip install -r requirements.txt`
 
+
+Forms without a proper redirect, might result in resubmission. Resulting in calking the same api again. If there was a client data tthat needs to saved to database this will cause duplication of records in the database.
+
+So redirection should be encouraged.
