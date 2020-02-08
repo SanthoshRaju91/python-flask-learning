@@ -20,4 +20,7 @@
 
     `source venv/bin/activate`
 
-    
+4. Install application package dependencies with pip install, for sharing the packages dependencies of the project we include them in `requirements.txt` file and install them with the below command
+
+    `pip install -r requirements.txt`
+
