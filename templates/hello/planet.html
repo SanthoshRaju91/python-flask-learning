@@ -1,1 +1,7 @@
-<h1>Hello, planet #{{ t_planet }}</h1>
+{% extends 'base.html' %}
+
+{% block title %} Hello Planet {% endblock %}
+
+{% block content %}
+    <h1>Hello, planet #{{ t_planet }}</h1>
+{% endblock %}

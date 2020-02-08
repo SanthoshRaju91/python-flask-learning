@@ -1,1 +1,7 @@
-<h1>Hello there, {{ t_name }}</h1>
+{% extends 'base.html' %}
+
+{% block title %} Hello Name {% endblock %}
+
+{% block content %}
+    <h1>Hello there, {{ t_name }}</h1>
+{% endblock %}
